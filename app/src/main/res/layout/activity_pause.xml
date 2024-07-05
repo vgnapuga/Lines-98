@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:id="@+id/main"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/background_dark"
+
+    tools:context=".PauseActivity">
+
+    <ImageButton
+        android:id="@+id/buttonResume"
+
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+
+        android:background="@drawable/resume"
+
+        android:onClick="resumeGame"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <ImageButton
+        android:id="@+id/buttonExit"
+
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+
+        android:background="@drawable/exit"
+
+        android:onClick="toMenu"
+
+        android:layout_marginTop="11dp"
+
+        app:layout_constraintTop_toBottomOf="@id/buttonResume"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
